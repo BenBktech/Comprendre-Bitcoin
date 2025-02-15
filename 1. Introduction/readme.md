@@ -4,5 +4,5 @@ Bitcoin est une monnaie numérique décentralisée qui fonctionne sur une blockc
 
 Bitcoin est un programme informatique, vous pouvez le télécharger ici : [Bitcoin.org](https://bitcoin.org/en/download)
 
-![Screenshot1](https://github.com/BenBktech/Apprendre-Bitcoin/tree/main/1.%20Introduction/images/screenshot1.png)
+![Screenshot1](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot1.png)
 
