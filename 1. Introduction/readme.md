@@ -1,101 +1,98 @@
-# Introduction à Bitcoin
+# 🏆 Introduction à Bitcoin
 
-Bitcoin est une **monnaie numérique décentralisée** qui fonctionne sur une **blockchain sécurisée**. Son réseau repose sur des mineurs qui valident les transactions **sans intermédiaire ni autorité centrale**.
+Bitcoin est une monnaie numérique décentralisée qui fonctionne sur une **blockchain sécurisée** grâce à un réseau de mineurs, permettant des **transactions sans intermédiaire ni autorité centrale**.
 
-Vous pouvez télécharger le programme ici : [Bitcoin.org](https://bitcoin.org/en/download).
+🔗 **Télécharger Bitcoin ici :** [Bitcoin.org](https://bitcoin.org/en/download)
 
-![Screenshot1](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot1.png)
+![Bitcoin Screenshot](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot1.png)
 
-Lorsque vous envoyez une transaction sur le réseau Bitcoin, elle est transmise de machine en machine jusqu’à ce que tous les participants l’aient enregistrée. Toutes les **10 minutes environ**, un ordinateur (nœud) sélectionné au hasard **ajoute les transactions récentes à la blockchain** et partage cette mise à jour avec le réseau.
+Lorsqu'une nouvelle transaction est initiée sur le réseau, elle est transmise de machine en machine jusqu'à ce que **tous les participants en aient une copie**.  
+Toutes les **10 minutes**, un ordinateur (nœud) **ajoute les transactions récentes à la blockchain** et diffuse cette mise à jour à l'ensemble du réseau.
 
-![Screenshot2](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot2.png)
+![Blockchain Screenshot](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot2.png)
 
-Le protocole Bitcoin repose sur un vaste réseau d’ordinateurs interconnectés qui **échangent et mettent à jour un registre commun** avec chaque nouvelle transaction.
+Le protocole Bitcoin repose sur un vaste **réseau d'ordinateurs interconnectés** qui échangent **un registre commun** et l’actualisent avec chaque nouvelle transaction.
 
 ---
 
-## 📌 Quel problème Bitcoin résout-il ?
+## 🔍 Quel problème Bitcoin résout-il ?
 
-Bitcoin a été conçu pour résoudre le problème des **paiements électroniques sans autorité centrale**.
+Bitcoin apporte une solution à **l’absence d’un système de paiement fonctionnant sans autorité centrale**.
 
-Avant son invention, il était déjà possible de transmettre des transactions sur un réseau informatique. Cependant, un problème majeur persistait :  
-💡 **La double dépense** → Un utilisateur pouvait envoyer la même unité de monnaie numérique **deux fois** en simultané sur le réseau.
+Avant son invention, il était déjà possible d’échanger des transactions via un réseau informatique.  
+❌ **Problème** : la possibilité d’introduire **des transactions contradictoires**, ce qui permettait la **double dépense**.
 
-### 🔴 Le problème de la double dépense
+💡 **Exemple :**  
+- Un utilisateur pouvait tenter d’utiliser **la même unité de monnaie numérique** pour effectuer **deux paiements distincts** en les diffusant simultanément sur le réseau.
+- Certains ordinateurs recevront d’abord la **transaction verte**, tandis que d’autres recevront en premier la **transaction rouge**.
+- **Qui décide laquelle est valide ?** 🤔
 
-Dans un réseau sans intermédiaire, certaines machines pourraient **recevoir la transaction A en premier**, tandis que d’autres recevraient **la transaction B**.  
-Le problème est alors de **déterminer laquelle est valide** sans autorité centrale.
+✔ **Solution Bitcoin** :
+- **Les nœuds stockent temporairement** toutes les transactions avant leur inscription sur la blockchain.
+- Toutes les **10 minutes**, un nœud est **sélectionné pour inscrire ces transactions** de manière irréversible.
+- **Les transactions en conflit sont supprimées**, garantissant ainsi l’intégrité du système.
 
-### ✅ Comment Bitcoin règle ce problème ?
-
-Bitcoin empêche la double dépense grâce à un mécanisme de **validation des transactions** :
-1. **Les nœuds du réseau stockent temporairement toutes les transactions** qu’ils reçoivent.
-2. **Toutes les 10 minutes**, un nœud (sélectionné au hasard) **ajoute ces transactions à la blockchain**.
-3. **Le réseau adopte ensuite cette mise à jour** et **rejette toutes les transactions conflictuelles**.
-
-Ainsi, **toutes les machines du réseau conservent la même version de la blockchain**, empêchant toute tentative de fraude.
+🔗 **Ainsi, aucune transaction en double ne peut être enregistrée.**
 
 ---
 
 ## ⛏️ Comment fonctionne le minage ?
 
-Le **minage** est le processus qui permet d'ajouter de nouveaux blocs de transactions à la blockchain.
+Le **minage** consiste à **enregistrer de nouveaux blocs de transactions** sur la blockchain.
 
-### 🔹 Étape 1 : Collecte des transactions  
-Chaque nœud conserve les transactions récentes dans une **mémoire temporaire** appelée **mempool**.
+### 📌 Étapes du minage :
 
-### 🔹 Étape 2 : Création d’un bloc  
-Un nœud sélectionné regroupe ces transactions dans un **bloc**, qu’il tente d’ajouter à la blockchain.
+1️⃣ Chaque nœud conserve les transactions récentes dans une mémoire temporaire appelée **mempool**.  
+2️⃣ Un nœud sélectionné regroupe ces transactions dans un **bloc**, qu’il tente d’ajouter à la blockchain.  
+3️⃣ Le bloc doit passer par une **fonction de hachage**, qui génère un **hash unique** et imprévisible.  
+4️⃣ Pour être accepté, ce hash doit respecter une **condition spécifique** définie par le réseau.  
+5️⃣ Les mineurs tentent **des milliards de calculs** pour trouver un **hash valide**.  
 
-### 🔹 Étape 3 : Calcul du hash  
-Pour inscrire un bloc, il doit être **haché** à l’aide d’une **fonction cryptographique**.  
-Un "hash" est une **empreinte numérique unique** qui doit respecter une **condition spécifique**.
+📌 **Une fois un mineur trouve un hash valide**, son **bloc est ajouté à la blockchain** et partagé avec l’ensemble du réseau.
 
-### 🔹 Étape 4 : Preuve de travail  
-Les mineurs modifient certaines valeurs et **recalculent le hash** en boucle jusqu'à obtenir un résultat valide.  
-C’est un processus exigeant **beaucoup de puissance de calcul**.
-
-### 🔹 Étape 5 : Validation et diffusion  
-Lorsqu’un mineur **trouve un hash valide**, son bloc est ajouté à la blockchain et partagé avec l’ensemble du réseau.
-
-### 💡 Pourquoi parle-t-on de minage ?
-Le terme "minage" vient du fait que les mineurs sont **récompensés** avec de nouveaux bitcoins à chaque bloc validé. Cette récompense est appelée **récompense de bloc**.
-
----
-
-## 🏗️ Pourquoi appelle-t-on cela la "blockchain" ?
-
-Les transactions ne sont pas enregistrées individuellement, mais regroupées en **blocs**.  
-Chaque bloc est lié au précédent, **formant une chaîne inaltérable** : **la blockchain**.
-
-📌 **Règles essentielles de la blockchain :**  
-- Le réseau considère toujours **la plus longue chaîne** comme la version officielle.  
-- Pour modifier l’historique des transactions, il faudrait **recalculer une chaîne plus longue**, ce qui est **quasiment impossible** sans contrôler la majorité du réseau.  
-
-Ce mécanisme garantit **l’intégrité et la sécurité** du registre Bitcoin.
+✅ **Avantage :**  
+✔ Sécurise le réseau  
+✔ Empêche la falsification des transactions  
+✔ Assure un **système de validation distribué** sans autorité centrale  
 
 ---
 
 ## 💰 D’où viennent les bitcoins ?
 
-Les nouveaux bitcoins sont créés par le **minage**.  
-Lorsqu’un mineur valide un bloc, il **reçoit une récompense** en bitcoins fraîchement générés.
+Bitcoin **récompense les mineurs** en créant **de nouveaux bitcoins** à chaque bloc validé.
 
-🎯 **Pourquoi cette récompense ?**  
-Elle **incite les mineurs à sécuriser le réseau**, tout en assurant une **distribution progressive des nouveaux bitcoins**.
+- **Récompense de bloc** 🎁 : le mineur qui valide un bloc reçoit **une quantité fixe de bitcoins**.  
+- **Pourquoi cette récompense ?**  
+  ✔ Incite les mineurs à sécuriser le réseau  
+  ✔ Assure une distribution progressive des nouveaux bitcoins  
+
+---
+
+## 🔗 Pourquoi appelle-t-on cela la "blockchain" ?
+
+Les transactions ne sont **pas enregistrées individuellement**, mais **regroupées en blocs**, qui sont ensuite **enchaînés** les uns aux autres.
+
+🔗 **Chaque bloc contient une référence au précédent**, créant une **chaîne continue** : **la blockchain**.
+
+✔ **Règles essentielles de la blockchain** :  
+- Le réseau adopte **toujours la chaîne la plus longue** comme version officielle.  
+- Modifier des transactions passées nécessiterait **de recalculer une chaîne plus longue** que l’originale, ce qui est **quasiment impossible**.  
+
+🔒 **La blockchain est protégée par la puissance collective du réseau.**
 
 ---
 
 ## 🔄 Comment fonctionnent les transactions Bitcoin ?
 
-Bitcoin fonctionne comme un **portefeuille rempli de billets numériques** appelés **outputs** :
+Bitcoin fonctionne comme un **portefeuille rempli de billets numériques** appelés **outputs**.
 
-1. **Chaque output contient une somme précise de bitcoins**.
-2. **Quand tu envoies une transaction, tu sélectionnes un ou plusieurs outputs** que tu possèdes.
-3. **Tu crées de nouveaux outputs** en répartissant le montant entre le destinataire et toi (la monnaie rendue).
-4. **Une fois un output utilisé, il devient invalide** et ne peut plus être dépensé.
+📌 **Comment ça marche ?**  
+1️⃣ **Chaque output contient une somme précise de bitcoins**.  
+2️⃣ **Quand tu envoies une transaction, tu sélectionnes un ou plusieurs outputs** que tu possèdes.  
+3️⃣ **Tu crées de nouveaux outputs** en répartissant le montant entre le destinataire et toi (la monnaie rendue).  
+4️⃣ **Une fois un output utilisé, il devient invalide** et ne peut plus être dépensé.
 
-📌 **Comparaison simple :**
+📌 **Comparaison simple :**  
 - 🔹 **Tu as un billet de 50€ et tu dois payer 30€**.  
 - 🔹 **Tu ne peux pas couper ton billet**, alors tu **le donnes en entier** et on te rend 20€.  
 - 🔹 En Bitcoin, c’est pareil : un nouveau "billet" (output) est créé pour **rendre la monnaie**.
@@ -106,24 +103,24 @@ Bitcoin fonctionne comme un **portefeuille rempli de billets numériques** appel
 
 Pour recevoir et stocker des bitcoins, tu as besoin de **deux clés cryptographiques** :
 
-- **Clé publique 🔓** → C’est comme une **adresse e-mail** pour recevoir des bitcoins.  
-- **Clé privée 🔑** → C’est comme un **mot de passe** qui permet d’envoyer tes bitcoins.  
+- **Clé publique 🔓** → **Comme une adresse e-mail**, elle permet de **recevoir** des bitcoins.  
+- **Clé privée 🔑** → **Comme un mot de passe**, elle permet de **dépenser** tes bitcoins.
 
 ⚠️ **Il est impossible de retrouver une clé privée à partir de la clé publique.**  
-Cela garantit que seul le propriétaire légitime peut accéder à ses fonds.
+Cela garantit que **seul le propriétaire légitime peut accéder à ses fonds**.
 
 ---
 
 ## 🖊️ Comment débloquer ses bitcoins ?
 
-Lorsque tu veux **envoyer des bitcoins**, tu dois prouver que tu es bien leur propriétaire.  
-Pour cela, tu crées une **signature numérique** avec ta clé privée.  
+Lorsque tu veux **envoyer des bitcoins**, tu dois prouver que tu en es **bien le propriétaire**.  
+Pour cela, tu crées une **signature numérique** avec ta clé privée.
 
 ✅ **Cette signature a deux rôles :**  
-1. **Elle prouve que tu possèdes la clé privée** (sans la révéler).  
-2. **Elle est unique pour chaque transaction**, donc **ne peut pas être réutilisée**.  
+1️⃣ Elle **prouve que tu possèdes la clé privée** (sans la révéler).  
+2️⃣ Elle est **unique pour chaque transaction**, donc **ne peut pas être réutilisée**.
 
-Grâce à ce système, **seul le détenteur de la clé privée peut envoyer les bitcoins**.
+✔ Grâce à ce système, **seul le détenteur de la clé privée peut envoyer ses bitcoins.**
 
 ---
 
