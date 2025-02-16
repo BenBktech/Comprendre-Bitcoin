@@ -26,8 +26,12 @@ Avant Bitcoin, il était possible d'échanger de la monnaie numérique sur un r�
 🔥 **Le risque de double dépense**  
 Un utilisateur pouvait tenter d'utiliser la **même unité de monnaie** pour deux paiements différents en même temps.
 
+![Screenshot3](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot3.png)
+
 ➡️ **Bitcoin empêche cela** en obligeant les nœuds à stocker **temporairement** toutes les transactions.  
 ✅ Toutes les **10 minutes**, un nœud est sélectionné pour inscrire ces transactions dans la blockchain, rendant toute fraude impossible.
+
+![Screenshot4](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot4.png)
 
 ---
 
@@ -35,14 +39,25 @@ Un utilisateur pouvait tenter d'utiliser la **même unité de monnaie** pour deu
 
 Le **minage** est le processus qui permet d'enregistrer de nouveaux **blocs** de transactions sur la blockchain.
 
+![Screenshot5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot5.png)
+
 🔹 **Étape 1** : Chaque nœud stocke temporairement les transactions récentes dans une mémoire appelée **mempool**.  
 🔹 **Étape 2** : Un nœud sélectionné regroupe ces transactions dans un bloc.  
 🔹 **Étape 3** : Il doit ensuite **résoudre un problème mathématique** complexe pour ajouter ce bloc à la blockchain.  
 
+
 📌 **Pourquoi faut-il de la puissance de calcul ?**  
-Pour inscrire un bloc, il faut le **haché** avec un algorithme cryptographique.  
-Seule une valeur respectant un **seuil précis** est acceptée.  
+Pour inscrire un bloc, il faut le **haché** avec un algorithme cryptographique. 
+
+![Screenshot6](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot6.png)
+
+Seule une valeur respectant un **seuil précis** est acceptée. 
+
+![Screenshot7](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot7.png)
+
 Les mineurs doivent donc tester **des millions de combinaisons** jusqu'à obtenir une valeur correcte.
+
+![Screenshot8](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot8.png)
 
 🏆 **Le premier mineur à réussir ajoute son bloc et reçoit une récompense en bitcoins.**
 
@@ -53,6 +68,8 @@ Les mineurs doivent donc tester **des millions de combinaisons** jusqu'à obteni
 Bitcoin est un **système décentralisé**, donc il ne peut pas être imprimé comme une monnaie classique.  
 À la place, de **nouveaux bitcoins** sont créés **lorsqu'un mineur valide un bloc**.
 
+![Screenshot9](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot9.png)
+
 🎁 **Récompense du minage** :  
 ✅ Lorsqu’un mineur réussit à ajouter un bloc à la blockchain, il reçoit des bitcoins en récompense.  
 ⚠️ Cette récompense **diminue avec le temps** pour limiter l'inflation.
@@ -61,8 +78,12 @@ Bitcoin est un **système décentralisé**, donc il ne peut pas être imprimé c
 
 ## 🏗️ Pourquoi appelle-t-on cela la "blockchain" ?
 
+![Screenshot10](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot10.png)
+
 🔹 **Les transactions ne sont pas inscrites une par une**, mais regroupées en **blocs** avant d’être ajoutées.  
-🔹 **Chaque nouveau bloc est lié au précédent**, formant ainsi une **chaîne** de blocs, d’où le nom **blockchain**.  
+🔹 **Chaque nouveau bloc est lié au précédent**, formant ainsi une **chaîne** de blocs, d’où le nom **blockchain**. 
+
+![Screenshot11](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot11.png)
 
 📌 **Sécurité et intégrité**  
 - Chaque nœud du réseau considère toujours **la chaîne la plus longue** comme référence.  
@@ -74,6 +95,10 @@ Bitcoin est un **système décentralisé**, donc il ne peut pas être imprimé c
 
 Imagine la blockchain comme un **grand registre** contenant des **enveloppes sécurisées** appelées **outputs**.
 
+![Screenshot12](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot12.png)
+
+![Screenshot13](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot13.png)
+
 🔹 **Quand tu fais une transaction** :  
 1. Tu ouvres une **enveloppe contenant des bitcoins**.
 2. Tu crées une nouvelle enveloppe pour ton destinataire, en la verrouillant avec **sa clé publique**.
@@ -83,16 +108,24 @@ Imagine la blockchain comme un **grand registre** contenant des **enveloppes sé
 Tu veux envoyer **30 BTC** à quelqu’un, mais tu n’as qu’un **billet de 50 BTC**.  
 ➡️ Tu donnes le billet, la personne prend **30 BTC**, et **on te rend la monnaie** (20 BTC).  
 
+![Screenshot14](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot14.png)
+
+![Screenshot15](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot15.png)
+
 📌 **Important** :
 - Les **bitcoins ne sont jamais stockés** à un endroit précis.
 - Chaque transaction est liée à une précédente, assurant **une traçabilité totale**.
 - Une fois qu’un **output est utilisé, il est définitivement dépensé**.
+
+![Screenshot16](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot16.png)
 
 ---
 
 ## 🔑 Comment possèdes-tu des bitcoins ?
 
 Pour **recevoir** des bitcoins, tu as besoin d’un **jeu de clés cryptographiques**.
+
+![Screenshot17](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot17.png)
 
 🔹 **Deux types de clés** :  
 ✅ **Clé publique** : Ton **adresse Bitcoin** (comme un IBAN), que tu peux partager.  
@@ -109,6 +142,8 @@ Si quelqu’un la découvre, il peut voler **tous tes bitcoins**.
 
 1. **Clé privée** : Un **grand nombre aléatoire**.
 2. **Clé publique** : Calculée à partir de la clé privée.
+
+![Screenshot18](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot18.png)
 
 💡 **Ce qui est astucieux** :  
 ✅ Tu peux **partager** ta clé publique sans risque.  
