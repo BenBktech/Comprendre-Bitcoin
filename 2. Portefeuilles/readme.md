@@ -24,7 +24,17 @@ Ces wallets sont **connectés à Internet**, ce qui les rend plus exposés aux c
 
 ❌ **Inconvénients :**  
 ⚠ Vulnérables aux logiciels malveillants  
-⚠ Moins sécurisés qu'un hardware wallet  
+⚠ Moins sécurisés qu'un hardware wallet 
+
+![Screenshot1](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot1.png)
+
+![Screenshot2](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot2.png)
+
+![Screenshot3](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot3.png)
+
+![Screenshot4](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot4.png)
+
+![Screenshot5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot5.png)
 
 ---
 
@@ -112,18 +122,55 @@ Une **seed phrase** est une suite de **12 ou 24 mots** permettant de **restaurer
 Un wallet Bitcoin est un **logiciel ou un appareil** qui stocke et gère les **clés privées** permettant d’accéder à des bitcoins.  
 Contrairement à un compte bancaire, un wallet **ne stocke pas les bitcoins eux-mêmes**, mais les **informations** permettant d’interagir avec la **blockchain Bitcoin**.
 
+### 🌱 La Seed Phrase : La Racine de votre Wallet
+
+Lors de la création d’un wallet Bitcoin, une **seed phrase** (ou phrase de récupération) de **12 ou 24 mots** est générée.  
+Cette seed phrase est la **source de toutes les clés privées** et adresses associées à votre wallet.  
+
+#### 🔑 Comment fonctionne la seed phrase ?
+1. La **seed phrase** est générée aléatoirement par le wallet selon la norme **BIP-39**.
+2. Cette seed phrase est utilisée pour dériver une **master key** à l’aide de **BIP-32**.
+3. À partir de cette **master key**, le wallet génère **toutes les clés privées** et les **adresses Bitcoin** correspondantes.
+
+✅ **Avantages de la seed phrase** :  
+✔ Permet de restaurer un wallet sur n’importe quel appareil compatible.  
+✔ Évite de devoir sauvegarder individuellement chaque clé privée.  
+
+⚠ **Attention !**  
+⚠ **Si vous perdez votre seed phrase, vous perdez définitivement l’accès à vos bitcoins.**  
+⚠ **Ne la stockez jamais sur un appareil connecté à Internet !**  
+
+---
+
 ### 📩 Création d’une Adresse Bitcoin
 
-1. Le wallet génère une **clé privée aléatoire**.  
-2. À partir de cette clé privée, une **clé publique** est dérivée.  
-3. La clé publique est **hachée** et encodée pour créer une **adresse Bitcoin**.  
+Une **adresse Bitcoin** est générée à partir de la **clé privée**, elle-même issue de la **seed phrase**.  
+
+1. Le wallet génère une **seed phrase**.  
+2. Cette seed est utilisée pour dériver une **clé privée principale**.  
+3. La **clé privée principale** permet de générer plusieurs **clés privées** pour différentes adresses.  
+4. À partir de chaque **clé privée**, une **clé publique** est dérivée.  
+5. La **clé publique** est **hachée** et encodée pour créer une **adresse Bitcoin**.
+
+![Screenshot6](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot6.png)
 
 #### 🔢 Exemple :
-- **Clé privée** : `5J3mBbAH58...`  
+- **Seed phrase** : `avocat vague tapis océan...`  
+- **Clé privée dérivée** : `5J3mBbAH58...`  
 - **Clé publique** : `03a34b4d...`  
 - **Adresse Bitcoin** : `bc1qxy2kg...`  
 
 Chaque transaction Bitcoin est envoyée à une adresse spécifique, et le propriétaire de la **clé privée associée** peut **dépenser ces fonds**.
+
+---
+
+### 🔎 Pourquoi est-ce important ?
+Grâce à cette structure **hiérarchique et déterministe (HD Wallet, BIP-32)** :  
+✔ Toutes les adresses d’un wallet peuvent être restaurées uniquement avec la **seed phrase**.  
+✔ Un wallet peut générer **des milliers d’adresses Bitcoin** à partir d’une seule seed.  
+✔ Les utilisateurs n’ont pas besoin de sauvegarder chaque clé privée, **seule la seed phrase est essentielle**.
+
+💡 **Conseil** : Notez votre seed phrase sur **papier** ou **métal** et stockez-la en lieu sûr. Ne jamais la sauvegarder en ligne !  
 
 ---
 
