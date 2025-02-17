@@ -26,15 +26,15 @@ Ces wallets sont **connectés à Internet**, ce qui les rend plus exposés aux c
 ⚠ Vulnérables aux logiciels malveillants  
 ⚠ Moins sécurisés qu'un hardware wallet 
 
-![Screenshot1](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot1.png)
+![Screenshot1](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/2.%20Portefeuilles/images/screenshot1.png)
 
-![Screenshot2](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot2.png)
+![Screenshot2](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/2.%20Portefeuilles/images/screenshot2.png)
 
-![Screenshot3](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot3.png)
+![Screenshot3](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/2.%20Portefeuilles/images/screenshot3.png)
 
-![Screenshot4](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot4.png)
+![Screenshot4](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/2.%20Portefeuilles/images/screenshot4.png)
 
-![Screenshot5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot5.png)
+![Screenshot5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/2.%20Portefeuilles/images/screenshot5.png)
 
 ---
 
@@ -152,7 +152,7 @@ Une **adresse Bitcoin** est générée à partir de la **clé privée**, elle-m�
 4. À partir de chaque **clé privée**, une **clé publique** est dérivée.  
 5. La **clé publique** est **hachée** et encodée pour créer une **adresse Bitcoin**.
 
-![Screenshot6](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Introduction/images/screenshot6.png)
+![Screenshot6](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/2.%20Portefeuilles/images/screenshot6.png)
 
 #### 🔢 Exemple :
 - **Seed phrase** : `avocat vague tapis océan...`  
