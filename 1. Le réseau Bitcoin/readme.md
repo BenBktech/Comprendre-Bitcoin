@@ -4,21 +4,21 @@
 
 Le réseau Bitcoin est un vaste système distribué composé de milliers d’ordinateurs qui exécutent un même programme : le client Bitcoin. Ce logiciel permet aux utilisateurs de communiquer entre eux et de faire fonctionner Bitcoin en tant que monnaie numérique décentralisée.
 
-1.png
+![1](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Le%20r%C3%A9seau%20Bitcoin/images/1.png)
 
 ## Comment fonctionne ce réseau ?
 
 Lorsqu’on parle de « réseau Bitcoin », on parle d’un ensemble d’ordinateurs interconnectés qui échangent des informations. Mais concrètement, ces machines ne se contentent pas d’être connectées entre elles, elles assurent une fonction essentielle : elles relaient en permanence des données concernant les transactions effectuées sur Bitcoin.
 
-2.png
+![2](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Le%20r%C3%A9seau%20Bitcoin/images/2.png)
 
 Imaginons un réseau de personnes connectées les unes aux autres, où chacun reçoit et transmet des messages. Ces messages peuvent contenir des informations sur de nouvelles transactions, des mises à jour sur l’état de la blockchain, ou encore des blocs validés.
 
-3.png
+![3](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Le%20r%C3%A9seau%20Bitcoin/images/3.png)
 
 Ce mécanisme de diffusion garantit que chaque participant dispose d’une copie actualisée et synchronisée du registre des transactions Bitcoin. C’est ce qui permet à Bitcoin de fonctionner sans autorité centrale : tout le monde a accès aux mêmes informations et peut les vérifier en temps réel.
 
-4.png
+![4](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Le%20r%C3%A9seau%20Bitcoin/images/4.png)
 
 ## Un réseau pair-à-pair (P2P)
 
@@ -27,7 +27,7 @@ Le réseau Bitcoin est qualifié de réseau pair-à-pair (P2P). Mais qu’est-ce
 - Chaque participant est connecté aux autres, formant ainsi un réseau sans hiérarchie centrale.
 - Tous les participants ont le même statut, ce qui signifie qu’il n’y a pas de serveur centralisé ni de structure de contrôle unique.
 
-
+![5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Le%20r%C3%A9seau%20Bitcoin/images/5.png)
 
 Ce mode de fonctionnement est la clé de la résistance de Bitcoin à la censure et aux défaillances techniques : si un nœud s’arrête, le réseau continue de fonctionner grâce aux autres participants.
 
@@ -35,7 +35,7 @@ Ce mode de fonctionnement est la clé de la résistance de Bitcoin à la censure
 
 N’importe qui peut rejoindre le réseau Bitcoin. Il suffit d’avoir une connexion Internet et d’exécuter un logiciel spécifique appelé « client Bitcoin ». Une fois ce programme lancé, votre machine devient un nœud du réseau Bitcoin.
 
-6.png
+![6](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/1.%20Le%20r%C3%A9seau%20Bitcoin/images/6.png)
 
 Un nœud est simplement un ordinateur qui exécute le logiciel Bitcoin et participe au relai des informations sur le réseau. Certains nœuds vont encore plus loin et jouent un rôle crucial dans la validation des transactions en devenant des mineurs, mais nous verrons cela plus tard.
 
