@@ -4,6 +4,8 @@
 
 Un nœud Bitcoin est simplement un ordinateur exécutant le logiciel Bitcoin. Mais ce qui le rend essentiel, c’est qu’il est connecté à d’autres nœuds, formant ainsi un vaste réseau décentralisé qui maintient et sécurise Bitcoin.
 
+1.png
+
 ## Quel est le rôle d’un nœud Bitcoin ?
 
 Un nœud joue trois rôles majeurs :
@@ -18,7 +20,11 @@ Voyons ces points en détail.
 
 Chaque nœud fonctionne selon un ensemble de règles strictes définies par le protocole Bitcoin. Son rôle est de vérifier les transactions qu’il reçoit et de ne relayer que celles qui respectent ces règles.
 
+2.png
+
 Si une transaction ne respecte pas les règles (par exemple, si quelqu’un essaie d’envoyer plus de bitcoins qu’il n’en possède), elle est automatiquement rejetée et ne sera pas transmise aux autres nœuds.
+
+3.png
 
 C’est ce mécanisme qui garantit l’intégrité du réseau : aucun acteur ne peut tricher en créant des transactions frauduleuses ou en modifiant les règles à sa convenance.
 
@@ -29,7 +35,12 @@ Les transactions peuvent être de deux types :
 
 - **Les transactions non confirmées** : ce sont les transactions qui viennent d’être créées et qui doivent encore être validées par le réseau.
 - **Les transactions confirmées** : ce sont les transactions déjà validées et enregistrées dans la blockchain sous forme de blocs.
+
+4.png
+
 Chaque nœud relaie ces transactions aux autres, assurant ainsi la propagation des informations à l’échelle du réseau.
+
+5.png
 
 ### Conserver une copie des transactions confirmées
 En plus de relayer les transactions, les nœuds conservent une copie de toutes les transactions validées sous forme de blockchain.
