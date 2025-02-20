@@ -14,11 +14,11 @@ Sans le minage, Bitcoin ne pourrait pas fonctionner, car il n’y aurait aucun m
 
 Lorsqu’une transaction est initiée sur Bitcoin, elle est diffusée aux nœuds du réseau et stockée temporairement dans un espace appelé mempool. Il s’agit d’un réservoir où les transactions attendent d’être confirmées et intégrées dans un bloc.
 
-1.png
+![1](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/3.%20Le%20minage/images/1.png)
 
 Tous les mineurs ont accès à ces transactions et essaient de les inclure dans un bloc, mais seules les transactions incluses dans un bloc validé seront officiellement enregistrées dans la blockchain.
 
-2.png
+![2](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/3.%20Le%20minage/images/2.png)
 
 ### La preuve de travail (Proof of Work)
 
@@ -32,11 +32,11 @@ Concrètement, les mineurs doivent :
 
 Ce processus est totalement aléatoire et repose sur la force brute : le mineur doit essayer des milliards de combinaisons avant de trouver la bonne.
 
-4.png
+![3](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/3.%20Le%20minage/images/3.png)
 
 Lorsque l’un des mineurs parvient à trouver une solution valide, il diffuse son bloc au réseau, qui le vérifie et l’ajoute à la blockchain.
 
-5.png
+![4](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/3.%20Le%20minage/images/4.png)
 
 ## Pourquoi le minage est-il essentiel ?
 
@@ -50,11 +50,11 @@ Le mécanisme de preuve de travail empêche un attaquant de modifier les transac
 
 Lorsque vous effectuez une transaction en bitcoins, tous les nœuds du réseau n'en sont pas informés instantanément. En effet, les transactions se déplacent sur le réseau bitcoin en passant d'un nœud à l'autre.
 
-img.png
+![5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/3.%20Le%20minage/images/5.png)
 
 Imaginons qu’un utilisateur tente de dépenser les mêmes bitcoins deux fois, en envoyant une transaction à deux commerçants différents. Ces deux transactions circuleraient sur le réseau en même temps, créant un conflit.
 
-img.png
+![6](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/3.%20Le%20minage/images/6.png)
 
 - Certains nœuds reçoivent la transaction rouge en premier (et ignorent la transaction verte).
 - Certains nœuds reçoivent la transaction verte en premier (et ignorent la transaction rouge).
@@ -67,7 +67,7 @@ Par exemple, si un nœud avec la transaction verte réussit à miner un bloc, c'
 
 Cette méthode de sélection des transactions semble peu orthodoxe, je le sais, mais c'est la solution qu'utilise le réseau bitcoin pour parvenir à un consensus en cas de transactions contradictoires (également connues sous le nom de « double dépense »).
 
-img.png
+![7](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/3.%20Le%20minage/images/7.png)
 
 ### Émission de nouveaux bitcoins
 
