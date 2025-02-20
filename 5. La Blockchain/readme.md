@@ -52,8 +52,6 @@ Chaque bloc contient :
 
 Ce chaînage assure l’intégrité des données : modifier un seul bloc casserait toute la chaîne, ce qui est techniquement impossible sans un contrôle total du réseau (attaque des 51 %).
 
-![5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/5.%20La%20Blockchain/images/5.png)
-
 ## Comment la blockchain est-elle partagée et mise à jour ?
 
 ### Un fichier distribué sur tous les nœuds Bitcoin
@@ -62,6 +60,8 @@ La blockchain fonctionne comme un fichier partagé entre tous les nœuds Bitcoin
 Chaque nœud stocke une copie complète de la blockchain et la met à jour dès qu’un nouveau bloc est validé.
 
 Si un nœud est en retard et n’a pas les derniers blocs, il les récupère automatiquement auprès des autres nœuds du réseau.
+
+![5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/5.%20La%20Blockchain/images/5.png)
 
 ### La synchronisation des nouveaux nœuds
 
