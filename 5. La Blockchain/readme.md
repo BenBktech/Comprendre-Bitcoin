@@ -4,11 +4,11 @@
 
 La blockchain est un fichier qui contient l’ensemble des transactions Bitcoin depuis la création du réseau en 2009.
 
-img
+![1](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/5.%20La%20Blockchain/images/1.png)
 
 Chaque utilisateur du réseau Bitcoin possède une copie de ce fichier, qui est régulièrement mis à jour avec les nouvelles transactions validées.
 
-img
+![2](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/5.%20La%20Blockchain/images/2.png)
 
 ## Pourquoi la blockchain est-elle essentielle ?
 
@@ -18,7 +18,7 @@ Contrairement à un compte bancaire classique où un solde est mis à jour direc
 
 Au lieu de cela, la blockchain enregistre uniquement les transactions.
 
-img
+![3](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/5.%20La%20Blockchain/images/3.png)
 
 Si vous voulez savoir combien de bitcoins sont présents sur une adresse, vous devez analyser toutes les transactions associées à cette adresse et en faire le solde.
 
@@ -32,7 +32,7 @@ Pourquoi ? Parce que les transactions ne sont pas enregistrées individuellement
 
 Si quelqu’un essayait de modifier une transaction passée, cela changerait le hash du bloc concerné, ce qui casserait la liaison avec les blocs suivants. Résultat : l’ensemble du réseau rejetterait la tentative de fraude.
 
-img
+![4](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/5.%20La%20Blockchain/images/4.png)
 
 C’est ce qui rend Bitcoin fiable et sécurisé.
 
@@ -52,7 +52,7 @@ Chaque bloc contient :
 
 Ce chaînage assure l’intégrité des données : modifier un seul bloc casserait toute la chaîne, ce qui est techniquement impossible sans un contrôle total du réseau (attaque des 51 %).
 
-img
+![5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/5.%20La%20Blockchain/images/5.png)
 
 ## Comment la blockchain est-elle partagée et mise à jour ?
 
