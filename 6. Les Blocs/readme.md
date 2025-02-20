@@ -11,7 +11,7 @@ Chaque bloc contient :
 
 L’enchaînement de ces blocs forme la blockchain, garantissant ainsi l’intégrité et la sécurité du réseau Bitcoin.
 
-img
+![1](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/1.png)
 
 ## Comment sont formés les blocs ?
 
@@ -19,13 +19,13 @@ Les blocs sont créés au cours du processus de minage.
 
 Lorsque vous effectuez une transaction Bitcoin, celle-ci n’est pas immédiatement ajoutée à la blockchain. Elle est d’abord placée dans un espace temporaire appelé mempool (ou "pool de mémoire"), qui regroupe toutes les transactions en attente de validation.
 
-img
+![2](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/2.png)
 
 ## Construction d’un bloc candidat
 
 Un mineur sélectionne des transactions du mempool et les regroupe dans ce que l’on appelle un bloc candidat.
 
-img
+![3](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/3.png)
 
 Ce bloc candidat n’est pas encore ajouté à la blockchain : il doit d’abord être validé à travers la preuve de travail (Proof of Work).
 
@@ -38,7 +38,7 @@ Chaque bloc Bitcoin contient deux parties :
 - Le bloc de transactions : Une liste de transactions confirmées.
 - L’en-tête du bloc (block header) : Une série de métadonnées qui décrit le bloc et permet son intégration dans la blockchain.
 
-img
+![4](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/4.png)
 
 ### Le bloc de transactions
 
@@ -48,7 +48,7 @@ Pour s’assurer de l’intégrité des transactions dans le bloc, Bitcoin utili
 
 Le Merkle Root, inclus dans l’en-tête du bloc, est une empreinte cryptographique unique qui résume toutes les transactions contenues dans le bloc.
 
-img
+![5](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/5.png)
 
 ### L’en-tête du bloc (Block Header)
 
@@ -63,7 +63,7 @@ L’en-tête du bloc contient des informations essentielles pour relier chaque b
 
 Le hash du bloc précédent est crucial : il garantit que chaque bloc est lié au précédent, formant ainsi une chaîne sécurisée et infalsifiable.
 
-img
+![6](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/6.png)
 
 ## Comment un bloc est-il ajouté à la blockchain ?
 
@@ -75,11 +75,13 @@ Le mineur doit générer un hash du bloc (à partir de l’en-tête du bloc) qui
 
 Plus la difficulté est élevée, plus cette valeur cible est basse, ce qui rend la recherche d’un hash valide plus difficile.
 
-img
+![7](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/7.png)
 
 ### Utilisation du nonce pour trouver un hash valide
 
 Comme le hash du bloc est déterminé par son contenu, le mineur ne peut pas le modifier directement. Pour tenter de produire un hash valide, il modifie un champ appelé nonce et recommence le calcul jusqu’à ce qu’il trouve une solution qui respecte la cible imposée.
+
+![8](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/8.png)
 
 Le processus :
 
@@ -89,11 +91,13 @@ Le processus :
 
 Ce processus est purement aléatoire et demande une énorme puissance de calcul, d’où l’utilisation de machines spécialisées (ASICs) dans le minage Bitcoin.
 
-img
+![9](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/9.png)
 
 ## Que se passe-t-il lorsqu’un bloc est miné ?
 
 Une fois qu’un mineur a trouvé un hash valide, son bloc est ajouté à la blockchain et propagé à l’ensemble du réseau.
+
+![10](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/6.%20Les%20Blocs/images/10.png)
 
 Tous les autres nœuds vérifient alors :
 - Que le hash respecte bien les critères de difficulté.
