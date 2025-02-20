@@ -30,9 +30,9 @@ Les fonctions de hachage cryptographiques comme SHA-256 possèdent plusieurs car
 
 Quelle que soit la taille de l’entrée, la sortie a toujours la même longueur (256 bits pour SHA-256).
 
-"Bitcoin" =	6b9d2c6c9eaa5a9ed7d6398850e663d3b7ee68a731c5c822dd3d5fa95e8d29a5
-"Hello, world!" = 315f5bdb76d0f40a97d2a5c8b96e5310ed3e42482f70a4e1a9808e2d19f11679
-"Bitcoin is decentralized" = 5d1c3bfaeb6c7dbaf7b2a3545461c3c62088a02a4b423f5ebd503a2f7a55ed1b
+- "Bitcoin" =	6b9d2c6c9eaa5a9ed7d6398850e663d3b7ee68a731c5c822dd3d5fa95e8d29a5
+- "Hello, world!" = 315f5bdb76d0f40a97d2a5c8b96e5310ed3e42482f70a4e1a9808e2d19f11679
+- "Bitcoin is decentralized" = 5d1c3bfaeb6c7dbaf7b2a3545461c3c62088a02a4b423f5ebd503a2f7a55ed1b
 
 ![2](https://raw.githubusercontent.com/BenBktech/Apprendre-Bitcoin/refs/heads/main/3.%20Hash/images/2.png)
 
@@ -40,8 +40,8 @@ Quelle que soit la taille de l’entrée, la sortie a toujours la même longueur
 
 Un petit changement dans l’entrée entraîne un hash totalement différent.
 
-"Bitcoin" = 6b9d2c6c9eaa5a9ed7d6398850e663d3b7ee68a731c5c822dd3d5fa95e8d29a5
-"bitcoin" (lettre minuscule) = b15e3e02d8ed0c04dfbbd3b6b1b1d87731716acfc7c2e5f4a72f69a5f3e9f002
+- "Bitcoin" = 6b9d2c6c9eaa5a9ed7d6398850e663d3b7ee68a731c5c822dd3d5fa95e8d29a5
+- "bitcoin" (lettre minuscule) = b15e3e02d8ed0c04dfbbd3b6b1b1d87731716acfc7c2e5f4a72f69a5f3e9f002
 
 Bien que les deux textes soient presque identiques, le hash obtenu est complètement différent.
 
