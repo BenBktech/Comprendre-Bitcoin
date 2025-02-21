@@ -9,3 +9,5 @@
 - [5. C'est quoi la Blockchain ?](https://github.com/BenBktech/Comprendre-Bitcoin/tree/main/5.%20La%20Blockchain)
 - [6. C'est quoi un Block ?](https://github.com/BenBktech/Comprendre-Bitcoin/tree/main/6.%20Les%20Blocs)
 - [7. C'est quoi la Difficulté ?](https://github.com/BenBktech/Comprendre-Bitcoin/tree/main/7.%20La%20difficult%C3%A9)
+
+(La suite vient très très bientôt...)
