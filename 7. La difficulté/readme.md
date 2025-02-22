@@ -44,25 +44,6 @@ La difficulté est donc augmentée de 11 % pour ralentir le minage.
 
 💡 Pour éviter des changements trop brutaux, l’ajustement est limité : la difficulté ne peut pas être multipliée par plus de 4 ni divisée par plus de 4 en un seul ajustement.
 
-## Comment la difficulté contrôle le temps entre les blocs ?
-
-Pour comprendre, imaginons un jeu de tirage au sort.
-
-1️⃣ Vous devez tirer un nombre au hasard entre 1 et 100.
-2️⃣ Votre objectif est de trouver un nombre inférieur à une certaine cible.
-3️⃣ Vous pouvez faire un tirage une fois par minute.
-
-Si la cible est 50, il vous faudra environ 2 minutes pour trouver un nombre en dessous.
-Si la cible est 20, il faudra environ 5 minutes en moyenne.
-
-Plus la cible est basse, plus le jeu devient difficile et plus le temps entre chaque succès est long.
-
-Dans Bitcoin, la difficulté fonctionne exactement de la même manière.
-
-💡 Au lieu de tirer un numéro au hasard, les mineurs génèrent des "hashes" en espérant en trouver un inférieur à une cible fixée par la difficulté.
-
-Plus la difficulté est haute, plus la cible est basse, ce qui prolonge le temps nécessaire pour trouver un hash valide et ajouter un bloc à la blockchain.
-
 ## La difficulté et le minage Bitcoin
 
 Dans Bitcoin, chaque mineur doit générer un hash de bloc qui soit inférieur à une valeur cible imposée par la difficulté.
@@ -121,14 +102,3 @@ En adaptant la difficulté, Bitcoin empêche un acteur unique d’avoir trop d�
 
 ### Elle protège contre les attaques des 51%
 Une attaque des 51 % devient économiquement et techniquement impossible grâce à la difficulté.
-
-## Conclusion
-
-- La difficulté ajuste automatiquement la complexité du minage toutes les 2 semaines pour maintenir un rythme de 10 minutes par bloc.
-- Elle évolue en fonction du hashrate : plus il y a de mineurs, plus elle est élevée.
-- Elle empêche la centralisation du réseau et protège Bitcoin contre les attaques.
-- Elle garantit un réseau stable et sécurisé, sans intervention extérieure.
-
-Sans ce mécanisme, Bitcoin ne pourrait pas fonctionner correctement et deviendrait vulnérable.
-
-Dans le prochain chapitre, nous verrons comment sont vérifiées et validées les transactions Bitcoin, et pourquoi elles sont si sécurisées sans autorité centrale.
