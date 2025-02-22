@@ -8,6 +8,14 @@ Une transaction Bitcoin est simplement un ensemble de données qui contient :
 - Le montant envoyé.
 - L’adresse du destinataire (où vont les bitcoins).
 
+Quand une transaction est diffusée sur le réseau Bitcoin, elle est envoyée sous forme de données binaires encodées en hexadécimal (pour être plus compacte) :
+
+```
+0200000001d7d1745ee8fa7c...76a91489abcde...88ac
+```
+
+Les nœuds Bitcoin déchiffrent cette chaîne et en extraient les entrées, sorties, montants, signatures, etc.
+
 Contrairement aux transactions bancaires classiques, une transaction Bitcoin n'est qu’une ligne de données envoyée au réseau pour être vérifiée et inscrite dans la blockchain.
 
 ## Comment fonctionne une transaction Bitcoin ?
@@ -66,7 +74,7 @@ Cette signature prouve au réseau que vous êtes bien le propriétaire des fonds
 
 ### Création de la transaction
 
-L’utilisateur génère une transaction avec les entrées, les sorties et sa signature numérique.
+L’utilisateur génère une transaction avec les entrées, les sorties et sa signature numérique (On parlera de signature un peu plus tard). Toujours est-il que l'utilisateur a besoin de sa clé privée pour "signer" la transaction afin de prouver qu'elle vient bien de lui.
 
 ### Propagation sur le réseau
 
@@ -86,16 +94,3 @@ Un mineur sélectionne la transaction, l’intègre dans un bloc candidat, puis 
 Si un mineur trouve un bloc valide, il l’ajoute à la blockchain et la transaction devient irréversible.
 
 💡 Une transaction est souvent considérée comme sûre après 6 confirmations (environ 1 heure).
-
-## Les frais de transaction Bitcoin
-
-Les frais Bitcoin varient en fonction de :
-- La congestion du réseau (plus il y a de transactions en attente, plus les frais sont élevés).
-- La taille de la transaction (en octets, pas en bitcoins !).
-
-💡 Exemple :
-
-- Une transaction simple avec 1 entrée et 2 sorties coûte peu cher.
-- Une transaction avec plusieurs entrées et sorties est plus volumineuse et coûte plus cher.
-
-Si vous proposez des frais trop bas, votre transaction risque d’être bloquée dans le mempool pendant longtemps.
