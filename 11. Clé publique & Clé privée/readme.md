@@ -16,7 +16,7 @@ Pour utiliser Bitcoin, vous avez besoin de trois éléments essentiels :
 
 ⚠️ **Important** : **Ne partagez jamais votre clé privée !** Si quelqu’un l’obtient, il peut voler vos bitcoins.
 
-img1
+![img1](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/11.%20Cl%C3%A9%20publique%20%26%20Cl%C3%A9%20priv%C3%A9e/images/1.png)
 
 ## D’où viennent les clés et les adresses Bitcoin ?
 
@@ -26,7 +26,7 @@ Les clés sont générées aléatoirement sur votre ordinateur ou votre portefeu
 
 Tout commence avec la génération d’un nombre aléatoire extrêmement grand.
 
-img2
+![img2](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/11.%20Cl%C3%A9%20publique%20%26%20Cl%C3%A9%20priv%C3%A9e/images/2.png)
 
 📌 Exemple de clé privée (en hexadécimal) :
 ```
@@ -63,7 +63,7 @@ Une fois la clé privée générée, on l’utilise pour calculer la clé publiq
 
 C’est une fonction à sens unique :
 
-img3
+![img3](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/11.%20Cl%C3%A9%20publique%20%26%20Cl%C3%A9%20priv%C3%A9e/images/3.png)
 
 📌 Exemple de clé publique (format compressé) :
 
@@ -84,7 +84,7 @@ Puisque la clé publique est trop encombrante, on en dérive une version plus co
 - On ajoute une somme de contrôle pour éviter les erreurs de saisie.
 - On encode le tout en Base58 (alphabet sans caractères ambigus comme "0" et "O").
 
-img4
+![img4](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/11.%20Cl%C3%A9%20publique%20%26%20Cl%C3%A9%20priv%C3%A9e/images/4.png)
 
 📌 Exemple d’adresse Bitcoin :
 ```
@@ -118,4 +118,4 @@ Si vous perdez votre clé privée, vous perdez définitivement l’accès à vos
 - Imaginons que vous ayez 1 BTC stocké sur une adresse Bitcoin.
 - Si vous perdez la clé privée associée, ces bitcoins restent sur la blockchain, mais personne ne pourra jamais les récupérer.
 
-img5
+![img5](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/11.%20Cl%C3%A9%20publique%20%26%20Cl%C3%A9%20priv%C3%A9e/images/5.png)
