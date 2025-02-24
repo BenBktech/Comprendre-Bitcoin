@@ -4,7 +4,7 @@
 
 La difficulté est un paramètre du réseau Bitcoin qui régule la complexité du minage afin de garantir que les blocs soient ajoutés toutes les 10 minutes en moyenne.
 
-img1
+![img1](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/1.png)
 
 Puisque Bitcoin fonctionne avec un réseau décentralisé, il ne peut pas y avoir une autorité qui régule directement la vitesse à laquelle les blocs sont minés. C’est pourquoi un ajustement automatique de la difficulté a été intégré dès la conception du protocole Bitcoin.
 
@@ -14,15 +14,15 @@ Ce mécanisme permet de s’assurer que, peu importe le nombre de mineurs et la 
 
 Si la difficulté restait fixe alors que de plus en plus de mineurs rejoignent le réseau, les blocs seraient minés de plus en plus rapidement.
 
-img2
+![img2](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/2.png)
 
 Inversement, si des mineurs quittaient le réseau, les blocs prendraient plus de temps à être validés, ralentissant le fonctionnement de Bitcoin.
 
-img3
+![img3](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/3.png)
 
 Grâce à la difficulté, le réseau s’autorégule et garantit que les blocs sont ajoutés à un rythme constant de 10 minutes, maintenant ainsi la cohérence du système.
 
-img4
+![img4](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/4.png)
 
 ## Quand et comment la difficulté change-t-elle ?
 
@@ -32,7 +32,7 @@ Lors de cet ajustement, chaque nœud du réseau compare :
 - Le temps attendu pour miner ces 2016 blocs (2016 × 10 minutes = 20 160 minutes).
 - Le temps réel qu’il a fallu pour miner ces blocs.
 
-img5
+![img5](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/5.png)
 
 Puis, le nœud applique cette formule d’ajustement :
 
@@ -40,7 +40,7 @@ Puis, le nœud applique cette formule d’ajustement :
 Nouvelle Difficulté = Ancienne Difficulté X (Temps attendu / Temps réel)
 ```
 
-img6
+![img6](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/6.png)
 
 Exemple :
 
@@ -50,7 +50,7 @@ Exemple :
 Nouvelle Difficulté = Ancienne Difficulté  * (20160 / 18144) = Ancienne Difficulté * 1.11
 ```
 
-img7
+![img7](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/7.png)
 
 La difficulté est donc augmentée de 11 % pour ralentir le minage.
 
@@ -81,9 +81,11 @@ Si le hash commence par suffisamment de zéros, il est valide. Sinon, le mineur 
 
 C’est un jeu de loterie, et plus il y a de joueurs (mineurs), plus il faut augmenter la difficulté pour maintenir le rythme de 10 minutes par bloc.
 
-img8
-img9
-img10
+![img8](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/8.png)
+
+![img9](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/9.png)
+
+![img10](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/7.%20La%20difficult%C3%A9/images/10.png)
 
 ## L’impact du hashrate sur la difficulté
 
@@ -95,6 +97,7 @@ Le hashrate est la puissance totale de calcul du réseau Bitcoin.
 Ce mécanisme assure que, peu importe le nombre de mineurs actifs, les blocs continuent d’être créés toutes les 10 minutes.
 
 ## Historique et évolution de la difficulté Bitcoin
+
 Depuis le lancement de Bitcoin en 2009, la difficulté a explosé en raison de l’augmentation massive de la puissance de minage.
 
 📊 Évolution de la difficulté Bitcoin :
