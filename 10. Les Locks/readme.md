@@ -8,7 +8,7 @@ Chaque output dans une transaction Bitcoin est verrouillé par un ensemble de co
 
 Lorsque vous recevez des bitcoins, ils sont stockés sous forme d’outputs, chacun verrouillé par une condition spécifique qui doit être satisfaite pour être dépensé.
 
-img1
+![img1](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/1.png)
 
 ## Quand un lock est-il ajouté à un output ?
 
@@ -22,13 +22,13 @@ Rappelons le fonctionnement d’une transaction Bitcoin :
 - Vous envoyez 0.5 BTC à votre ami.
 - La transaction crée un nouvel output de 0.5 BTC et le verrouille à l’adresse Bitcoin de votre ami.
 
-img2
+![img2](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/2.png)
 
 Désormais, seule la personne possédant la clé privée de cette adresse peut utiliser ces 0.5 BTC.
 
 Chaque output est verrouillé et ne peut être dépensé que par celui qui peut prouver qu’il en est le propriétaire.
 
-img3
+![img3](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/3.png)
 
 ## Où les bitcoins sont-ils réellement stockés ?
 
@@ -36,13 +36,13 @@ Les bitcoins ne sont pas physiquement stockés sur votre ordinateur ou dans un f
 
 En réalité, ils existent uniquement sur la blockchain sous forme d'outputs verrouillés.
 
-img4
+![img4](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/4.png)
 
-img5
+![img5](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/5.png)
 
 Lorsque vous effectuez une transaction, vous sélectionnez des outputs disponibles sur la blockchain, et une fois qu’ils sont utilisés, ils sont remplacés par de nouveaux outputs avec de nouveaux locks.
 
-img6
+![img6](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/6.png)
 
 💡 Ainsi, la blockchain est en réalité un gigantesque stockage de bitcoins verrouillés !
 
@@ -50,7 +50,7 @@ img6
 
 Les locks sont définis en Bitcoin Script, un langage de programmation simple utilisé dans les transactions.
 
-img7
+![img7](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/7.png)
 
 Un verrou standard pour protéger un output ressemble à ceci :
 
@@ -64,19 +64,19 @@ OP_DUP OP_HASH160 <Adresse Bitcoin> OP_EQUALVERIFY OP_CHECKSIG
 
 Cela signifie que seule la personne possédant la clé privée associée à cette adresse pourra déverrouiller l’output et l’utiliser comme input dans une future transaction.
 
-img8
+![img8](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/8.png)
 
 ## Comment un output est-il déverrouillé ?
 
 Lorsque vous créez une transaction, vous devez joindre un "script de déverrouillage" (unlocking script) aux outputs que vous voulez utiliser.
 
-img9
+![img9](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/9.png)
 
 Ensuite, pour déverrouiller un script de verrouillage typique, nous devons prouver que nous possédons l'adresse contenue dans le verrou. Pour ce faire, nous fournissons la clé privée liée à l'adresse.
 
-img10
+![img10](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/10.png)
 
-img11
+![img11](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/11.png)
 
 💡 Important : Votre clé privée n’est jamais révélée dans la transaction !
 
@@ -91,13 +91,13 @@ Si le réseau Bitcoin exigeait que vous fournissiez votre clé privée pour prou
 
 🔹 La solution : les signatures numériques
 
-img12
+![img12](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/12.png)
 
 - Au lieu de fournir la clé privée, vous utilisez la clé privée pour générer une signature unique.
 - Cette signature est spécifique à cette transaction, ce qui signifie qu’elle ne peut pas être réutilisée.
 - Grâce à un mécanisme mathématique, le réseau peut vérifier que la signature provient bien du propriétaire, sans jamais voir la clé privée.
 
-img13
+![img13](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/13.png)
 
 ## Bitcoin : Une monnaie programmable grâce aux locks
 
@@ -107,10 +107,10 @@ Les locks standard permettent de verrouiller un output pour une seule adresse, m
 
 - Multisig (Multisignature) → Déverrouillage possible uniquement si plusieurs signatures sont fournies.
 
-img14
+![img14](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/14.png)
 
 - Timelocks → L’output ne peut être dépensé qu’après une certaine date.
 
-img15
+![img15](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/10.%20Les%20Locks/images/15.png)
 
 Ces possibilités font de Bitcoin une monnaie programmable, ouvrant la porte à des contrats intelligents simples directement sur la blockchain.
