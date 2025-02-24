@@ -8,7 +8,7 @@ Une transaction Bitcoin est simplement un ensemble de données qui contient :
 - Le montant envoyé.
 - L’adresse du destinataire (où vont les bitcoins).
 
-img1
+![img1](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/1.png)
 
 Quand une transaction est diffusée sur le réseau Bitcoin, elle est envoyée sous forme de données binaires encodées en hexadécimal (pour être plus compacte) :
 
@@ -18,7 +18,7 @@ Quand une transaction est diffusée sur le réseau Bitcoin, elle est envoyée so
 
 Les nœuds Bitcoin déchiffrent cette chaîne et en extraient les entrées, sorties, montants, signatures, etc.
 
-img2
+![img2](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/2.png)
 
 Contrairement aux transactions bancaires classiques, une transaction Bitcoin n'est qu’une ligne de données envoyée au réseau pour être vérifiée et inscrite dans la blockchain.
 
@@ -26,7 +26,7 @@ Contrairement aux transactions bancaires classiques, une transaction Bitcoin n'e
 
 Lorsque vous effectuez une transaction, vous ne déplacez pas des bitcoins comme des pièces physiques d’un compte à un autre.
 
-img3
+![img3](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/3.png)
 
 En réalité, une adresse Bitcoin ne possède pas un solde fixe, mais une liste de paiements reçus qu’elle peut utiliser pour effectuer de nouvelles transactions.
 
@@ -37,7 +37,7 @@ Chaque transaction Bitcoin est constituée :
 - D’entrées (inputs) : ce sont des paiements reçus précédemment et utilisés pour envoyer des bitcoins.
 - De sorties (outputs) : ce sont les nouvelles adresses qui recevront les bitcoins.
 
-img4
+![img4](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/4.png)
 
 Lorsqu’un utilisateur envoie des bitcoins, il utilise des entrées existantes et crée de nouvelles sorties qui seront utilisées par d’autres dans le futur.
 
@@ -59,11 +59,13 @@ C’est comme payer 7 € avec un billet de 10 € et recevoir 3 € de monnaie.
 
 💡 Si vous ne précisez pas de "change", le réseau prendra la différence comme frais de transaction !
 
-img5
-img6 
-img7
-img8
+![img5](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/5.png)
 
+![img6](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/6.png)
+
+![img7](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/7.png)
+
+![img8](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/8.png)
 
 ## Pourquoi ne peut-on pas utiliser mes bitcoins sans mon autorisation ?
 
@@ -76,7 +78,7 @@ Chaque adresse Bitcoin a :
 - Une clé publique (visible par tous).
 - Une clé privée (secrète et connue seulement du propriétaire).
 
-img9
+![img9](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/9.png)
 
 ### La signature numérique
 
@@ -86,9 +88,11 @@ Cette signature prouve au réseau que vous êtes bien le propriétaire des fonds
 
 🚫 Sans cette signature, la transaction sera rejetée par le réseau.
 
-img10
-img11
-img12
+![img10](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/10.png)
+
+![img11](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/11.png)
+
+![img12](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/8.%20Les%20transactions/images/12.png)
 
 ## Comment une transaction est-elle validée et ajoutée à la blockchain ?
 
