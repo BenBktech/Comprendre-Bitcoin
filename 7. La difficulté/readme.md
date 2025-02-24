@@ -4,6 +4,8 @@
 
 La difficulté est un paramètre du réseau Bitcoin qui régule la complexité du minage afin de garantir que les blocs soient ajoutés toutes les 10 minutes en moyenne.
 
+img1
+
 Puisque Bitcoin fonctionne avec un réseau décentralisé, il ne peut pas y avoir une autorité qui régule directement la vitesse à laquelle les blocs sont minés. C’est pourquoi un ajustement automatique de la difficulté a été intégré dès la conception du protocole Bitcoin.
 
 Ce mécanisme permet de s’assurer que, peu importe le nombre de mineurs et la puissance totale du réseau (hashrate), les blocs ne sont ni minés trop rapidement ni trop lentement.
@@ -12,9 +14,15 @@ Ce mécanisme permet de s’assurer que, peu importe le nombre de mineurs et la 
 
 Si la difficulté restait fixe alors que de plus en plus de mineurs rejoignent le réseau, les blocs seraient minés de plus en plus rapidement.
 
+img2
+
 Inversement, si des mineurs quittaient le réseau, les blocs prendraient plus de temps à être validés, ralentissant le fonctionnement de Bitcoin.
 
+img3
+
 Grâce à la difficulté, le réseau s’autorégule et garantit que les blocs sont ajoutés à un rythme constant de 10 minutes, maintenant ainsi la cohérence du système.
+
+img4
 
 ## Quand et comment la difficulté change-t-elle ?
 
@@ -24,11 +32,15 @@ Lors de cet ajustement, chaque nœud du réseau compare :
 - Le temps attendu pour miner ces 2016 blocs (2016 × 10 minutes = 20 160 minutes).
 - Le temps réel qu’il a fallu pour miner ces blocs.
 
+img5
+
 Puis, le nœud applique cette formule d’ajustement :
 
 ```
 Nouvelle Difficulté = Ancienne Difficulté X (Temps attendu / Temps réel)
 ```
+
+img6
 
 Exemple :
 
@@ -37,6 +49,8 @@ Exemple :
 ```
 Nouvelle Difficulté = Ancienne Difficulté  * (20160 / 18144) = Ancienne Difficulté * 1.11
 ```
+
+img7
 
 La difficulté est donc augmentée de 11 % pour ralentir le minage.
 
@@ -66,6 +80,10 @@ Exemple de hash Bitcoin :
 Si le hash commence par suffisamment de zéros, il est valide. Sinon, le mineur doit recommencer en essayant un autre nonce.
 
 C’est un jeu de loterie, et plus il y a de joueurs (mineurs), plus il faut augmenter la difficulté pour maintenir le rythme de 10 minutes par bloc.
+
+img8
+img9
+img10
 
 ## L’impact du hashrate sur la difficulté
 
