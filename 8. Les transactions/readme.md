@@ -8,6 +8,8 @@ Une transaction Bitcoin est simplement un ensemble de données qui contient :
 - Le montant envoyé.
 - L’adresse du destinataire (où vont les bitcoins).
 
+img1
+
 Quand une transaction est diffusée sur le réseau Bitcoin, elle est envoyée sous forme de données binaires encodées en hexadécimal (pour être plus compacte) :
 
 ```
@@ -16,11 +18,15 @@ Quand une transaction est diffusée sur le réseau Bitcoin, elle est envoyée so
 
 Les nœuds Bitcoin déchiffrent cette chaîne et en extraient les entrées, sorties, montants, signatures, etc.
 
+img2
+
 Contrairement aux transactions bancaires classiques, une transaction Bitcoin n'est qu’une ligne de données envoyée au réseau pour être vérifiée et inscrite dans la blockchain.
 
 ## Comment fonctionne une transaction Bitcoin ?
 
 Lorsque vous effectuez une transaction, vous ne déplacez pas des bitcoins comme des pièces physiques d’un compte à un autre.
+
+img3
 
 En réalité, une adresse Bitcoin ne possède pas un solde fixe, mais une liste de paiements reçus qu’elle peut utiliser pour effectuer de nouvelles transactions.
 
@@ -30,6 +36,8 @@ Chaque transaction Bitcoin est constituée :
 
 - D’entrées (inputs) : ce sont des paiements reçus précédemment et utilisés pour envoyer des bitcoins.
 - De sorties (outputs) : ce sont les nouvelles adresses qui recevront les bitcoins.
+
+img4
 
 Lorsqu’un utilisateur envoie des bitcoins, il utilise des entrées existantes et crée de nouvelles sorties qui seront utilisées par d’autres dans le futur.
 
@@ -51,6 +59,12 @@ C’est comme payer 7 € avec un billet de 10 € et recevoir 3 € de monnaie.
 
 💡 Si vous ne précisez pas de "change", le réseau prendra la différence comme frais de transaction !
 
+img5
+img6 
+img7
+img8
+
+
 ## Pourquoi ne peut-on pas utiliser mes bitcoins sans mon autorisation ?
 
 ### Les transactions sont verrouillées par cryptographie
@@ -62,6 +76,8 @@ Chaque adresse Bitcoin a :
 - Une clé publique (visible par tous).
 - Une clé privée (secrète et connue seulement du propriétaire).
 
+img9
+
 ### La signature numérique
 
 Pour envoyer des bitcoins, vous devez signer numériquement la transaction avec votre clé privée.
@@ -69,6 +85,10 @@ Pour envoyer des bitcoins, vous devez signer numériquement la transaction avec 
 Cette signature prouve au réseau que vous êtes bien le propriétaire des fonds.
 
 🚫 Sans cette signature, la transaction sera rejetée par le réseau.
+
+img10
+img11
+img12
 
 ## Comment une transaction est-elle validée et ajoutée à la blockchain ?
 
