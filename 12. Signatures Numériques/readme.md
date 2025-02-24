@@ -8,7 +8,7 @@ Une signature numérique permet de prouver que vous possédez la clé privée as
 - Elle permet de signer une transaction pour prouver qu’elle vient bien du propriétaire légitime.
 - Elle empêche quiconque d’utiliser votre clé privée pour voler vos fonds.
 
-img1
+![img1](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/12.%20Signatures%20Num%C3%A9riques/images/1.png)
 
 ## Pourquoi Bitcoin utilise-t-il des signatures numériques ?
 
@@ -16,12 +16,12 @@ Dans Bitcoin, chaque transaction doit prouver que l’expéditeur est bien le pr
 
 🚨 Mais si la clé privée était directement inscrite dans la transaction, tout le monde pourrait la voir et l’utiliser !
 
-img2
+![img2](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/12.%20Signatures%20Num%C3%A9riques/images/2.png)
 
 💡 Solution :
 Au lieu de mettre la clé privée dans la transaction, on utilise une signature numérique pour prouver qu’on la possède sans jamais la révéler.
 
-img3
+![img3](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/12.%20Signatures%20Num%C3%A9riques/images/3.png)
 
 📌 Comparaison :
 
@@ -34,7 +34,7 @@ Une signature numérique se base sur deux éléments :
 - Votre clé privée (gardée secrète).
 - Les données de la transaction (ce que vous voulez signer).
 
-img4
+![img4](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/12.%20Signatures%20Num%C3%A9riques/images/4.png)
 
 Le processus se fait en deux étapes :
 
@@ -57,7 +57,7 @@ Si quelqu’un essaie de copier votre signature et de l’utiliser dans une autr
 
 Si quelqu’un tente de modifier une transaction après qu’elle ait été signée (par exemple, en changeant le montant ou l’adresse du destinataire), la signature ne correspondra plus aux nouvelles données.
 
-img5
+![img5](https://raw.githubusercontent.com/BenBktech/Comprendre-Bitcoin/refs/heads/main/12.%20Signatures%20Num%C3%A9riques/images/5.png)
 
 📌 Résultat : La transaction sera immédiatement rejetée par le réseau Bitcoin.
 
