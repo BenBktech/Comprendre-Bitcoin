@@ -102,11 +102,11 @@ Depuis le lancement de Bitcoin en 2009, la difficulté a explosé en raison de l
 
 📊 Évolution de la difficulté Bitcoin :
 
-Année 2009 :	1 (difficulté initiale)
-Année 2013 :	4 000 000
-Année 2017 :	1 000 000 000 000
-Année 2022 :	30 000 000 000 000
-Année 2024 :	85 000 000 000 000 (estimation)
+- Année 2009 :	1 (difficulté initiale)
+- Année 2013 :	4 000 000
+- Année 2017 :	1 000 000 000 000
+- Année 2022 :	30 000 000 000 000
+- Année 2024 :	85 000 000 000 000 (estimation)
 
 Cette augmentation est due à :
 - L’amélioration du matériel de minage (CPU → GPU → ASICs).
