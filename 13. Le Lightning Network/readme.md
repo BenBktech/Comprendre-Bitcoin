@@ -1,3 +1,0 @@
-# Le Lightning Network : Bitcoin Instantané et à Faibles Frais
-
-A venir...
